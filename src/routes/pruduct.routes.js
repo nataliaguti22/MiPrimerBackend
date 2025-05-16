@@ -1,6 +1,7 @@
 const Router = require("express").Router();
+const Product= require("../models/product")
 
-Router.get("/create", (req, res) => {
+Router.post("/create", (req, res) => {
     res.status(200).json({
         "message": "Holaaa, Bienvenido, Qué emocionante programar!!"
     }
